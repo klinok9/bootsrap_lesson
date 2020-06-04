@@ -147,6 +147,12 @@ h4{
 .section-progress .progress-item:hover{
 	background-color: #40286a;
 }
+/* setion lets */
+.section-lets{
+	background: url(../img/letsgrow.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
 
 
 
