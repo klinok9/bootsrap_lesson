@@ -20,6 +20,29 @@ h4{
 	font-size: 44px;
 	margin-bottom: 20px;
 }
+.scrollToTop{
+	position: fixed;
+	bottom: 60px;
+	right: 50px;
+	border-radius: 4px;
+	display: none;
+	font-size: 32px;
+	height: 50px;
+	width: 50px;
+	z-index:1001;
+	color: #fff;
+	transition: all .5s;
+	background-color: #da1757;
+	border: 0;
+	cursor: pointer;
+}
+.scrollToTop:hover{
+	background-color: #fff;
+	text-decoration: none;
+	outline: none;
+	color:#da1757;
+	border: 1px solid #da1757;
+}
 
 .main-header{
 	background: url(../img/main1.jpg) center no-repeat;
@@ -195,6 +218,111 @@ h4{
 	box-shadow: 0 14px 30px -15px rgba(0,0,0,0.75);
 }
 
+/* setion reviews */
+
+.section-reviews{
+	background: url(../img/reviews_bg.jpg) center no-repeat;
+	background-size: cover;
+	padding-top: 20px;
+	padding-bottom: 0;
+}
+.section-reviews .carousel-caption{
+	top:5%;
+	bottom: auto;
+	text-align: leftsss;
+}
+.section-reviews .blockquote{
+	font-style: italic;
+	font-weight: 500;
+	font-size: 22px;
+	position: relative;
+	padding-left: 40ps;
+	margin-top: 70px;
+}
+.section-reviews .blockquote::before{
+	content: '\201C';
+	float: left;
+	font-size: 150px;
+	font-weight: 500;
+	font-style: italic;
+	color: #f42267;
+	position: absolute;
+	top: -90px;
+	left: -50px;
+}
+/* setion form */
+.section-form{
+	background: url(../img/form_bg.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.section-form h5{
+	font-style: 30px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.section-form form{
+	margin-top: 50px;
+}
+.section-form .btn-violet{
+	background-color: #4b2d7f;
+}
+.btn-violet.btn-shadow{
+	box-shadow: 0 7px 0px #a57ee9;
+}
+.btn-violet.btn-shadow:hover{
+	background: #3a2362;
+	box-shadow: 0 5px 0px #a57ee9;
+}
+.section-form .form-control{
+	height: 51px;
+	background-color: rgba(255,255,255,.35);
+	color: #fff;
+	border: 0;
+	padding-left: 20px;
+	padding-right: 40px;
+	margin-bottom: 20px;
+}
+.section-form .form-control::placeholder{
+	color:#fff;
+}
+/* setion footer*/
+.footer{
+	background: url(../img/world_map.png) center no-repeat;
+	background-size: cover;
+	padding: 100px 0;
+}
+.footer h5{
+	font-style: 25px;
+	color: #4b2d7f;
+	font-weight: 700;
+}
+.footer ul{
+	list-style: none;
+	padding-left: 10px;
+}
+.footer ul li a{
+	font-style: 15px;
+	font-weight: 600;
+	color: #171717;
+}
+.footer-images img{
+	margin-bottom: 20px;
+	border-radius: 15px;
+}
+.copyright{
+	background-color: #f6f6f6;
+	padding: 50ox 0;
+}
+.copyright a,
+.copyright span{
+	color: #171717;
+	font-size: 18px;
+	font-weight: 600;
+	position: relative;
+}
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	
@@ -205,6 +333,27 @@ h4{
 	.main-header-text{
 		background-color: rgba(0,0,0,.3);
 	}
+	section,
+	.footer{
+		padding: 50px 0;
+	}
+	.copyright{
+		padding: 25px 0;
+	}
+	.section-reviews h3,
+	.section-reviews h4{
+		font-size: 25px;
+	}
+	.section-reviews .blockquote{
+		font-size: 17px;
+		padding-left: 20px;
+		margin-top: 40px;
+	}
+	.section-reviews .blockquote::before{
+		font-style: 100px;
+		top:-40px;
+	}
+	
 }
 
 @media only screen and (max-width : 991px) {
@@ -231,6 +380,7 @@ h4{
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
+	
 }
 
 @media only screen and (max-width : 600px) {
@@ -246,7 +396,13 @@ h4{
 		margin-top: 0;
 	}
 }
-
+@media only screen and (max-width : 576px) {
+	.section-reviews .carousel-caption{
+		position: static;
+		width: 70%;
+		margin: auto;
+	}
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.section-tabs .nav-pills .nav-link{
