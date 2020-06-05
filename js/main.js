@@ -1,0 +1,6 @@
+$(function(){
+
+	baguetteBox.run('.gallery');
+
+});
+
